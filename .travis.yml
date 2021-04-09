@@ -9,11 +9,4 @@ script:
   - mocha
 notifications:
   slack: travisci:rE46Ewd4sCcMxcxBuewneWCa
-deploy:
-  provider: heroku
-  api_key: ec440989-78ba-4a03-8eb0-47e01d97af4e
-  app: travis-deploy
-  on:
-    tags: true
-    all_branches: true
     
