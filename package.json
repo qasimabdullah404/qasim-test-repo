@@ -1,0 +1,25 @@
+{
+  "name": "test-project",
+  "version": "1.1.0",
+  "description": "A basic express server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/travis-pro/test-project.git"
+  },
+  "author": "Qasim Abdullah <qasim.abdullah@travis-ci.org>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/travis-pro/test-project/issues"
+  },
+  "homepage": "https://github.com/travis-pro/test-project#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mocha": "^8.3.2",
+    "should": "^13.2.3",
+    "supertest": "^6.1.3"
+  }
+}
