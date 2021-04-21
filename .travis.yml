@@ -1,19 +1,14 @@
 language: node_js
 node_js:
-  - "14.16.0"
+- 14.16.0
 script:
-  - echo 'Starting build..'
-  - echo 'Installing dependencies..'
-  - npm install
-  - echo 'Running tests..'
-  - mocha
+- echo 'Starting build..'
+- echo 'Installing dependencies..'
+- npm install
+- echo 'Running tests..'
+- mocha
 notifications:
   slack: travisci:rE46Ewd4sCcMxcxBuewneWCa
-deploy:
-  provider: heroku
-  api_key: ec440989-78ba-4a03-8eb0-47e01d97af4e
-  app: travis-deploy
-  on:
-    tags: true
-    all_branches: true
-    
+before_install:
+- openssl aes-256-cbc -K $encrypted_3b65c13e9158_key -iv $encrypted_3b65c13e9158_iv
+  -in exercise.txt.enc -out exercise.txt -d
