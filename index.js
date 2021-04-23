@@ -4,7 +4,7 @@ const app = express();
 
 app.get("/", (req, res) => {
   res.json({
-    message: "Deployed using Travis CI, API Key Secured",
+    message: "Deployed using Travis CI",
     by: "Qasim Abdullah",
     email: "qasim.abdullah@travis-ci.org",
   });
