@@ -12,6 +12,7 @@ notifications:
 deploy:
   provider: heroku
   app: travis-deploy
+  skip_cleanup: true
   on:
     all_branches: true
   api_key:
