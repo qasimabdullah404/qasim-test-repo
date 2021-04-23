@@ -11,7 +11,8 @@ notifications:
   slack: travisci:rE46Ewd4sCcMxcxBuewneWCa
 deploy:
   provider: heroku
-  api_key: ec440989-78ba-4a03-8eb0-47e01d97af4e
   app: travis-deploy
   on:
     all_branches: true
+  api_key:
+    secure: UCfSFp7kIFPyOwCBMlLujVoJqdODTtfqQpVTxfMIjWgsphRiE2Pbgecbpn9PuKFDTZ6igjy/3kKeipzH0ga9X7g+itwBPBOWJ6U5dkF9e/8f3ES5gSCrQgvE3zYgy5aeGO/29BAo09vDWrVKm3/mDozLWPTo0HJksdes8/EMEJa9CngF+QX2uwz/11mNFbznnvpN6JAEy5jGHoBFmJvzHC0/fuhwDMHVKRldTmUuwKCtX4DEHBcwEwUvcLMlkbSEZfURlHCh1KCSI8T6mVEUrbZhDuoSHzkIlvPTFa9IS4R3B3bKkT2/eaxo/Zcg1Gw63J9VIeMO1ufApIFP0n8xqS/VLQDybqTvNV9bNfzWg4ECQQHlZUdyIqNLws24RhEfYiNvTH2dTJQlKNsQ4qT61nGH8GhUdQiVmBusph2cz/goVpduSRDe67YBrUM4xcZ4Ic/wZC0A8sNqQ59ZxhsX7kZcvp8jdXXfTWlHm8WAU/Uy1wlB+/KEM95xPgJyCSGgFXhpORbUIyTNiJdoH71sARiwFE1GnKYQaArc+wzsKLTZlcm234P+iCenzcb9OwD38+mbaxnwbJ7j/Kee9IuoDoeRGQk1Stt0hpkjZu0tnu+r04caGw9/r0TslRgRVmeOGecuEYf24tL3EYEWVZG6u+I7PB8cWzU+0ybQm6704qo=
