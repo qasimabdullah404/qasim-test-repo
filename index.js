@@ -3,7 +3,11 @@ const express = require("express");
 const app = express();
 
 app.get("/", (req, res) => {
-  res.send("Hello, World!");
+  res.json({
+    message: "Deployed using Travis CI",
+    by: "Qasim Abdullah",
+    email: "qasim.abdullah@travis-ci.org",
+  });
 });
 
 app.listen(process.env.PORT || 3000, () =>
