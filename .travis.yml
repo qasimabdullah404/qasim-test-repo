@@ -9,10 +9,6 @@ script:
 - mocha
 notifications:
   slack: travisci:rE46Ewd4sCcMxcxBuewneWCa
-deploy:
-  provider: heroku
-  app: travis-deploy
-  api_key: $heroku_api_key
-  skip_cleanup: true
-  on:
-    all_branches: true
+before_install:
+- openssl aes-256-cbc -K $encrypted_3b65c13e9158_key -iv $encrypted_3b65c13e9158_iv
+  -in exercise.txt.enc -out exercise.txt -d
